@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# Analysis & Design of An Algorithm – Zigzag Conversion
 
-You can use the [editor on GitHub](https://github.com/ayseK/dnm/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+In this article, we develop the optimum algorithm for the [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) problem and analyze its complexity. We use as little technical terminology as possible in doing so. We develop the algorithm in Java. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The problem is described in full on [Leetcode](https://leetcode.com/problems/zigzag-conversion/). Just to refresh – a zigzag of letters is constructed by lining them up in vertical blocks towards South, and in diagonal blocks towards North-East, repeatedly until all the letters in the input String are used up. The North and South corners of the zigzag are all at the same horizontal levels each, and the height of zigzag, i.e. the number of rows between its North and South ends is part of the input to this problem. 
 
-### Markdown
+So the input is two parts – the number of rows as an __`integer`__ and a sequence of characters as a `<String>`. We’ll refer to these two parameters as numRows and str respectively. Both inputs are fixed for a specific problem instance, i.e. their values don’t any change throughout the solution process. In this text, we’ll use the following problem instance for example purposes:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**L**|**0**|**1**
+-- | --| --
+0 | A | 
+1 | B |
+2 | C |
+3 | D | F
+4 | E |
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```{r, attr.source='.numberLines'}
+if (TRUE) {
+  x <- 1:10
+  x + 1
+}
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ayseK/dnm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
